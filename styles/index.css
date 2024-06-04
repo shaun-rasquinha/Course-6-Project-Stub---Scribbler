@@ -72,6 +72,11 @@ main {
   border-radius: 8px;
 }
 
+#all-posts a {
+  text-decoration: none;
+  color: black;
+}
+
 #post-buttons button {
   background-color: #d4af37; /* Gold color */
   color: black;
@@ -84,4 +89,142 @@ main {
 
 #post-buttons button:hover {
   background-color: darkgoldenrod;
+}
+
+/* Styling the Modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: -100px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#signup-form,
+#signin-form,
+#create-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#signup-form label,
+#signin-form label,
+#create-post-form label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#signup-form input,
+#signin-form input,
+#create-post-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.signup-submit,
+.signin-submit {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.signup-submit:hover,
+.signin-submit:hover {
+  background-color: darkgreen;
+}
+
+/* SignIn Modal */
+#signin-modal p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#signin-modal p a {
+  color: blue;
+  text-decoration: none;
+}
+
+#signin-modal p a:hover {
+  text-decoration: underline;
+}
+
+/* Create Posts */
+/* Create Post Modal */
+#create-post-form textarea {
+  resize: vertical; /* Allow only vertical resizing */
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgrey;
+  border: none;
+}
+
+.create-submit {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.create-submit:hover {
+  background-color: darkgreen;
 }
