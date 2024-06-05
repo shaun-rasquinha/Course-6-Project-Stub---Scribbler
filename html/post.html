@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/styles/post.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="logo">
+        <h1>ScriBBler</h1>
+        <p>Explore, Imagine, Create</p>
+      </div>
+      <div id="auth-buttons">
+        <button id="signup">Sign Up</button>
+        <button id="signin">Sign In</button>
+      </div>
+    </header>
+    <main class="post-container">
+      <div class="post-header">
+        <p class="author-name">Srishti Gupta</p>
+        <button id="edit-btn" class="edit-btn">
+          <i class="fas fa-edit"></i> Edit
+        </button>
+      </div>
+      <h1 class="post-title" contenteditable="false">
+        ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
+      </h1>
+      <p class="post-text" contenteditable="false">
+        Since JavaScript does not have any type-checking, either of these
+        keywords can be used to declare a variable of any type (datatype) in
+        JavaScript. Though all the three keywords are
+      </p>
+      <button id="like-btn" class="like-btn">
+        <i class="fas fa-thumbs-up"></i> Like
+      </button>
+      <p id="like-count" class="like-count">Be the first one to like this!</p>
+      <input
+        type="text"
+        id="comment-input"
+        class="comment-input"
+        placeholder="Leave a comment..."
+      />
+      <button id="comment-btn" class="comment-btn">Comment</button>
+      <div id="comments-section" class="comments-section">
+        <h3>All Comments</h3>
+        <div id="comments-list" class="comments-list"></div>
+      </div>
+    </main>
+
+    <script src="/scripts/post.js"></script>
+  </body>
+</html>

@@ -34,10 +34,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    // The ellipses button
+
     const moreButtons = document.querySelectorAll('.more-btn');
     moreButtons.forEach(button => {
         button.addEventListener('click', function() {
-            window.location.href = 'post.html';
+            
+            window.open('/html/post.html'); // Open in new tab
+
+            
         });
     });
 });
