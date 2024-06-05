@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     moreButtons.forEach(button => {
         button.addEventListener('click', function() {
             
-            window.open('/html/post.html'); // Open in new tab
+            window.location.href= '/html/post.html'; // Open in new tab
 
             
         });
